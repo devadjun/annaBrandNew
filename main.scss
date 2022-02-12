@@ -13,7 +13,7 @@ body {
   letter-spacing: 1px;
   min-height: 100vh;
   background-image: url(../img/IMG_2649.jpg);
-  background: linear-gradient(rgba(0, 0, 0, 0.4) rgba(0, 0, 0, 0.5)),
+  background: linear-gradient(rgba(0, 0, 0, 0.3) rgba(0, 0, 0, 0.2)),
     url(../img/IMG_2649.jpg);
   background-position: center center;
   background-size: cover;
@@ -39,7 +39,7 @@ li {
 a {
   color: #0a1f41;
   text-decoration: none;
-  font-size: 1.1rem;
+  font-size: 1rem;
   font-weight: 900;
 }
 
@@ -145,13 +145,11 @@ BIO, TYPOGRAPHY
   align-items: center;
   padding: 2rem;
   margin: 13rem;
-  border-radius: 0.5rem;
   font-size: 1.2rem;
   height: 100%;
 }
 
-.bio-text,
-.info {
+.bio-text {
   text-align: flex-start;
   padding-right: 5rem;
   margin-left: 3rem;
@@ -162,8 +160,7 @@ BIO, TYPOGRAPHY
   font-size: 2.7rem;
 }
 
-.bio-text::before,
-.info::before {
+.bio-text::before {
   content: "";
   display: block;
   position: absolute;
@@ -173,12 +170,12 @@ BIO, TYPOGRAPHY
   transform: translateY(6px);
   height: calc(100% - 92%);
 }
-.bio-text::after,
-.info::after {
+
+.bio-text::after {
   box-sizing: border-box;
 }
 
-.paragraps {
+.paragraph {
   margin: 1.2rem;
   font-size: 1rem;
 }
@@ -286,7 +283,7 @@ textarea,
   background: rgba(230, 152, 8, 0.3);
   backdrop-filter: blur(10px);
   box-shadow: 0px 0px 10px rgb(122, 122, 122);
-  padding: 3rem;
+  padding: 2rem;
   border-radius: 0.5rem;
   font-size: 1rem;
   margin-top: 10rem;
@@ -387,8 +384,10 @@ textarea,
     top: 70px;
     gap: 1;
     flex-direction: column;
-    background: rgba(119, 118, 117, 0.3);
-    backdrop-filter: blur(30px);
+    //background: rgba(119, 118, 117, 0.3);
+    //background: rgba(69, 146, 247, 0.081);
+    background: rgba(255, 255, 255, 0.411);
+    backdrop-filter: blur(25px);
     width: 100%;
     text-align: center;
     transition: 0.7s;
@@ -405,94 +404,147 @@ textarea,
   }
 } /// HAMBURGER *****/
 
-@media (max-width: 800px) {
+@media (max-width: 768px) {
   .main-name {
-    width: 80%;
-    font-size: 2.9rem;
+    font-size: 1.8rem;
     font-weight: 900;
-  }
-} /// MAIN ********/
-@media (max-width: 768px) {
-  .bio-main-div {
-    margin-right: 10%;
-    margin-left: 10%;
-    padding: 5rem;
-    border-radius: 0.5rem;
-    font-size: 1.1rem;
-  }
-} /// BIO*******/
-
-@media (max-width: 768px) {
-  .bio-main-div {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 2rem;
-    margin: 13rem;
-    border-radius: 0.5rem;
-    font-size: 1.2rem;
-    height: 100%;
-  }
-
-  .bio-text,
-  .info {
-    text-align: flex-start;
-    padding-right: 5rem;
-    margin-left: 3rem;
-    font-weight: 800;
-    //border-left: 6px solid #212f45;
-    height: 100px;
-    color: #fdb833;
-    //color: #212f45;
-    font-size: 2.7rem;
-  }
-
-  .bio-text::before,
-  .info::before {
-    content: "";
-    display: block;
-    position: absolute;
-    top: 60;
-    border-left: 5px solid #0a1f41;
-    left: 70px;
-    //width: 6px;
-    transform: translateY(6px);
-    height: calc(100% - 93%);
-  }
-  .bio-text::after,
-  .info::after {
-    box-sizing: border-box;
-  }
-
-  .paragraps {
-    margin: 3rem;
-    font-size: 1rem;
-  }
-
-  .bio-main-div,
-  .contact-form {
-    //background: rgba(230, 152, 8, 0.3);
-    background: hsla(207, 45%, 16%, 0.452);
-    backdrop-filter: blur(35px);
-    box-shadow: 3px 3px 20px rgb(122, 122, 122);
   }
 }
 
 /// LESSONS ******/
-@media (max-width: 768px) {
+
+@media (max-width: 820px) {
+  .main-name {
+    padding: 0;
+  }
+  .goal {
+    margin: 0;
+    padding: 0;
+    font-size: 0.9rem;
+    margin-right: 3rem;
+    margin-left: 3rem;
+  }
+
+  .lesson-intro {
+    margin-right: 3rem;
+    margin-left: 3rem;
+    font-size: 0.85rem;
+  }
+
+  .lesson-list,
+  .price-div {
+    padding: 0;
+    font-size: 0.7rem;
+    margin: 3rem;
+  }
   .lesson-intro::before {
     content: "";
     display: block;
     position: absolute;
-    top: 60;
     border-left: 7.5px solid #fdb833;
-    left: 65px;
-    //width: 6px;
+    left: 10px;
     transform: translateY(6px);
-    height: calc(100% - 71%);
+    min-height: calc(100% - 81%);
   }
-  .lesson-intro,
-  .lesson-list {
-    margin-right: 8rem;
+  .price {
+    font-size: 1rem;
+  }
+
+  .footer-social {
+    font-size: 0.7rem;
+    margin: 0 0.5em;
+  }
+  .footer-fineprint {
+    font-size: 0.5rem;
+  }
+  a {
+    opacity: 0.8;
+    color: #fdb833;
+    font-size: 0.9rem;
+    color: #0a1f41;
+  }
+}
+
+@media (max-width: 768px) {
+  .bio-text {
+    text-align: center;
+
+    //border-left: 6px solid #212f45;
+    margin: auto;
+    color: #fdb833;
+    font-size: 1.5rem;
+  }
+
+  .bio-text::before {
+    content: "";
+    display: block;
+    position: absolute;
+    //border-right: 1px solid #0a1f41;
+    border-right: none;
+    left: 40px;
+    transform: translateY(6px);
+    height: calc(100% - 96%);
+  }
+
+  .bio-text {
+    text-align: center;
+    font-weight: 800;
+    //border-left: 6px solid #212f45;
+    color: #fdb833;
+    font-size: 2rem;
+    margin: auto;
+  }
+  .bio-main-div {
+    color: #eeeeee;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1.2rem;
+    font-size: 1.1rem;
+  }
+}
+//***************
+//CONTACT INFORMATION
+//**************
+@media (max-width: 820px) {
+  .page-title {
+    font-size: 1.9rem;
+    margin-top: 10rem;
+    margin-bottom: 2.5rem;
+  }
+  .contact-info {
+    margin: 1rem;
+  }
+
+  .contact-form {
+    display: flex;
+    flex-direction: column;
+    max-width: 55%;
+    margin: 5rem auto;
+    font-size: 0.75rem;
+    font-weight: 500;
+  }
+  .btn-form {
+    width: 5.9rem;
+    height: 2.2rem;
+  }
+}
+@media (max-width: 768px) {
+  .wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    margin: 1rem;
+    padding: 1.7rem;
+    font-size: 1rem;
+  }
+}
+@media (max-width: 900px) {
+  .wrapper {
+    grid-template-columns: minmax(1em, 1fr) minmax(1em, 1fr);
+    grid-column: 2 / -1;
+    gap: 1.5rem;
+    margin: 3rem;
+    padding: 2rem;
   }
 }
